@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что-то готовится</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <link rel="stylesheet" href="../static/styles.css"> -->
+</head>
+<body>
+
+    <div class="mainBlock">
+        <div class="messageBlock1">
+            <div class="messageText1">ksendzov<b>.org</b> - тестовый сайт (этот)</div>
+            <!-- <div class="messageText1">ksendzov<b>.com</b> - основной сайт</div> -->
+            <div class="messageText1"><a rel="stylesheet" href="https://ksendzov.com" target="_blank">ksendzov<b>.com</b></a> - основной сайт</div>
+        </div>
+        <div class="messageBlock2">
+            <span class="messageText1 tSize">Что значит эта цифра ?): </span>
+            <span class="messageText1 dSize">&nbsp43</span>
+            
+        </div>
+
+    </div>
+    <div class="footterBlock">
+        <div class="footterLeft">
+            <div class="leftItem">Вадим Ксендзов</div>
+            <div class="leftItem">Telegram - <a rel="stylesheet" href="https://t.me/peplomot" target="_blank">@peplomot</a></div>
+            <div class="leftItem">Linkedin - <a rel="stylesheet" href="https://www.linkedin.com/in/vadim-ksendzov-74099837/" target="_blank">посмотреть профиль</a></div>
+            <div class="leftItem">Email: ksendzov.com@gmail.com</div>
+            <div class="leftItem">Сайт курса - <a rel="stylesheet" href="https://ksendzov.com" target="_blank">ksendzov.com</a></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

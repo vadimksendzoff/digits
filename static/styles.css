@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #2b2b2b;
+}
+
+.mainBlock {
+    margin: 0 auto;
+    max-width: 1172px;
+    /* border: 1px solid #000; */
+    height: 100%;
+}
+
+.messageBlock1 {
+    margin: 200px auto;
+    max-width: 430px;
+    height: 100px;
+    /* border: 1px solid #1f1f1f; */
+
+}
+
+.messageText1 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.messageBlock2 {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 830px;
+}
+
+.dSize {
+    font-size: 85px;
+    font-weight: 800;
+}
+
+.tSize {
+    font-size: 33px;
+    font-weight: 800;
+}
+
+.footterBlock {
+    margin: 200px auto;
+    max-width: 1172px;
+    border-top: 1px solid #000;
+    height: 300px;
+}
+
+.footterLeft {
+    margin: 30px 15px;
+}
+
+.leftItem {
+    margin-top: 10px;
+}
