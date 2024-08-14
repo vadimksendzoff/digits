@@ -52,9 +52,6 @@ def get_digits():
 
         
 
-        print(resp)
-        print(req_result)
-
         conn.commit()
         cursor.close()
 

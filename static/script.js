@@ -20,8 +20,6 @@ function getDigits() {
     axios.get('/get_digits').then(function (response) {
         
         const dataDigit = response.data.digit;
-
-        console.log(response.data.digit)
         
         setDigitsToHtml(dataDigit);
         setDigitsToLocalStorage(response.data);
@@ -37,6 +35,5 @@ function getDigits() {
 
 window.onload = function(){
     getDigits();
-    console.log(response.data[0]);
     console.log("Так)), сюда посмотрели, хорошо, теперь ещё подумайте где посмотреть про эту цифру)",)
 }
