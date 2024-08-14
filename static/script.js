@@ -7,18 +7,36 @@ function setDigitsToHtml (digit) {
 
 }
 
+function setDigitsToLocalStorage (data) {
+
+    localStorage.clear();
+    localStorage.setItem(data.message_2, data.digit);
+}
+
 
 function getDigits() {
-    axios.get('https://ksendzov.org/get_digits').then(function (response) {
+    
+
+    axios.get('/get_digits').then(function (response) {
         
-        setDigitsToHtml(response.data[0][0])
+        const dataDigit = response.data.digit;
+
+        console.log(response.data.digit)
+        
+        setDigitsToHtml(dataDigit);
+        setDigitsToLocalStorage(response.data);
+
     }).catch(function (error) {
         console.log("Error:", error)
     })
+
+
+
 }
 
 
 window.onload = function(){
     getDigits();
+    console.log(response.data[0]);
     console.log("Так)), сюда посмотрели, хорошо, теперь ещё подумайте где посмотреть про эту цифру)",)
 }

@@ -1,10 +1,12 @@
-from flask import Flask, request, jsonify, render_template
 import psycopg2
+from flask import Flask, render_template
+from flask_cors import CORS, cross_origin
 
 
-templ_folder = '/Users/vadimus/work/courses/digits_site/back_side'
 
 app = Flask(__name__)
+
+CORS(app)
 
 
 def get_db_connection():
@@ -31,12 +33,36 @@ def get_digits():
     conn = get_db_connection()
     cursor = conn.cursor()
 
+
+
     if conn:
-        qq = "select d_digit from digits_table where d_id = 1;"
+        qq = "select * from digits_table;"
         _ = cursor.execute(qq)
         req_result = cursor.fetchall()
+
+        db_resp = [resp_item for resp_item in req_result]
+
+        resp = {}
+
+        for i in req_result:
+            if i[0] == 1:
+                resp['digit'] = i[1]
+            elif i[0] == 2:
+                resp['message_2'] = i[1]
+
+        
+
+        print(resp)
+        print(req_result)
 
         conn.commit()
         cursor.close()
 
-        return req_result
+        return resp
+
+
+
+
+
+if __name__ == '__main__':
+    app.run()
