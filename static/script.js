@@ -9,8 +9,15 @@ function setDigitsToHtml (digit) {
 
 function setDigitsToLocalStorage (data) {
 
-    localStorage.clear();
+    // localStorage.clear();
     localStorage.setItem(data.message_2, data.digit);
+}
+
+function getDigitFromLocalStorage () {
+    resultDigit = localStorage.getItem('И в LocalStorage глянули), Хорошо!')
+    console.log(resultDigit)
+
+    return resultDigit
 }
 
 
@@ -19,10 +26,11 @@ function getDigits() {
 
     axios.get('/get_digits').then(function (response) {
         
-        const dataDigit = response.data.digit;
+        // const dataDigit = response.data.digit;
         
-        setDigitsToHtml(dataDigit);
+        setDigitsToHtml(getDigitFromLocalStorage());
         setDigitsToLocalStorage(response.data);
+        ;
 
     }).catch(function (error) {
         console.log("Error:", error)
