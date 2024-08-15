@@ -9,8 +9,8 @@ function setDigitsToHtml (digit) {
 
 function setDigitsToLocalStorage (data) {
 
-    // localStorage.clear();
-    localStorage.setItem(data.message_2, data.digi);
+    localStorage.clear();
+    localStorage.setItem(data.message_2, data.digit);
 }
 
 function getDigitFromLocalStorage () {
