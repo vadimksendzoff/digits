@@ -2,7 +2,7 @@
 
 function setDigitsToHtml (digit) {
 
-    digitElement = document.getElementById('dItem');
+    digitElement = document.getElementById('lDigit');
     digitElement.textContent = " " + digit;
 
 }
