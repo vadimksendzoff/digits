@@ -14,6 +14,28 @@ body {
     height: 100%;
 }
 
+.menu_block {
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.item_glossary{
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.item_glossary_link{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.item_glossary_link:hover{
+    text-decoration: underline;
+}
+
 .messageBlock1 {
     margin: 200px auto;
     max-width: 430px;

@@ -23,8 +23,13 @@ def get_db_connection():
 
 
 @app.route('/')
-def hello_world():
+def get_main_page():
     return render_template('index.html')
+
+
+@app.route('/glossary')
+def glossary_page():
+    return render_template('glossary.html')
 
 
 @app.route('/get_digits', methods=['GET'])

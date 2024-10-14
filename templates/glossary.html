@@ -10,26 +10,17 @@
     <!-- <link rel="stylesheet" href="../static/styles.css"> -->
 </head>
 <body>
-
     <div class="mainBlock">
-        <div class="menu_block">
+        <div class="menu_block"></div>
             <div class="menu_item item_glossary">
-                <!-- <a href="https://ksendzov.org/glossary" class="item_glossary_link">Glossary</a> -->
-                <a href="http://127.0.0.1:5002/glossary" class="item_glossary_link">IT-cловарь</a>
+                <!-- <a href="https://ksendzov.org/" class="item_glossary_link">На главную</a> -->
+                <a href="http://127.0.0.1:5002/" class="item_back_link">На главную</a>
             </div>
         </div>
-        <div class="messageBlock1">
-            <div class="messageText1">ksendzov<b>.org</b> - тестовый сайт (этот)</div>
-            <!-- <div class="messageText1">ksendzov<b>.com</b> - основной сайт</div> -->
-            <div class="messageText1"><a rel="stylesheet" href="https://ksendzov.com" target="_blank">ksendzov<b>.com</b></a> - основной сайт</div>
-        </div>
-        <div class="messageBlock2">
-            <span class="messageText1 tSize">Что значит это число ?): <span id="sDigit"></span> </span>
-            <span id="dItem" class="messageText1 dSize"></span>
-            
-        </div>
-
     </div>
+
+
+
     <div class="footterBlock">
         <div class="footterLeft">
             <div class="leftItem">Вадим Ксендзов</div>
@@ -39,7 +30,4 @@
             <div class="leftItem">Сайт курса - <a rel="stylesheet" href="https://ksendzov.com" target="_blank">ksendzov.com</a></div>
         </div>
     </div>
-    
-    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
 </body>
-</html>

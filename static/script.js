@@ -29,8 +29,8 @@ function getDigits() {
         // const dataDigit = response.data.digit;
         
         
-        // setDigitsToHtml('45');
-        setDigitsToLocalStorage(response.data);
+        setDigitsToHtml('45');
+//        setDigitsToLocalStorage(response.data);
         setDigitsToHtml(getDigitFromLocalStorage());
         ;
 
